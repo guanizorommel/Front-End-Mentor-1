@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 
@@ -66,13 +65,72 @@ section {
 .bottom p {
     text-transform: uppercase;
     font-size: .8rem;
+    margin-top: -20px;
     letter-spacing: 1px;
 }
 
 .rightcontent  {
-    
+    background: url('../images/image-header-desktop.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: auto;
 }
 
-.right-content img {
-   
+.coloroverlay {
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color:#6d24a8;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 1000px){
+
+    .cardcontainer {
+        flex-direction: column;
+        padding: 20% 0%;
+    }
+
+    .leftcontent {
+        order:10;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 0px;
+
+    }
+
+    .rightcontent {
+        order: 2;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .top {
+        text-align: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottom >* {
+        flex-basis: 100%;
+    }
+
+    .numbers h2 {
+        font-size: 3rem;
+    }
+
+    .numbers p {
+        font-size: 1rem;
+        margin-top: -30px;
+    }
 }
