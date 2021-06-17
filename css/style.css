@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3, p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+section {
+    background-color: #0a0c1b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardcontainer {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    border-radius: 5px;
+    
+    /* border: 3px solid red; */
+}
+
+.cardcontainer > * {
+    flex: 1 1 50%;
+}
+
+.leftcontent {
+    background-color: #1a1836;
+    padding: 4em 4em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
